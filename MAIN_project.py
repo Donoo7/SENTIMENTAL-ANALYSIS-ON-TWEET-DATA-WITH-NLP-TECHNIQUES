@@ -82,7 +82,7 @@ def main():
 
             # Display a GIF
             if prediction == 'positive':
-                file_ = open("C:/Users/donsh/OneDrive/Desktop/Streamlit/positive.gif", "rb")
+                file_ = open("positive.gif", "rb")
                 contents = file_.read()
                 data_url = base64.b64encode(contents).decode("utf-8")
                 file_.close()
@@ -90,7 +90,7 @@ def main():
                     f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
                     unsafe_allow_html=True,)
             elif prediction == 'negative':
-                file_ = open("C:/Users/donsh/OneDrive/Desktop/Streamlit/negative.gif", "rb")
+                file_ = open("negative.gif", "rb")
                 contents = file_.read()
                 data_url = base64.b64encode(contents).decode("utf-8")
                 file_.close()
@@ -98,7 +98,7 @@ def main():
                     f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
                     unsafe_allow_html=True,)
             else:
-                file_ = open("C:/Users/donsh/OneDrive/Desktop/Streamlit/neutral.gif", "rb")
+                file_ = open("neutral.gif", "rb")
                 contents = file_.read()
                 data_url = base64.b64encode(contents).decode("utf-8")
                 file_.close()
